@@ -8,12 +8,12 @@ class ApiOpenWeatherMap((unittest.TestCase)):
     def setUp(self):
         load_dotenv()
         
-    def test_valid_credentials_fail(self):
+    def test_if_credentials_are_not_valid(self):
         api_key = os.getenv('OPEN_WEATHER_API_KEY') + 'error'
         daily_url = "https://api.openweathermap.org/data/2.5/forecast?q={city}&units=metric&lang=pt&appid={api_key}".format(city= 'Rio de Janeiro', api_key = api_key)
         response = requests.get(daily_url)
         self.assertFalse(response.status_code == 200)
-    def test_valid_credentials_pass(self):
+    def test_if_credentials_are_valid(self):
         api_key = os.getenv('OPEN_WEATHER_API_KEY')
         daily_url = "https://api.openweathermap.org/data/2.5/forecast?q={city}&units=metric&lang=pt&appid={api_key}".format(city= 'Rio de Janeiro', api_key = api_key)
         response = requests.get(daily_url)
