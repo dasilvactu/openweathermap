@@ -1,9 +1,7 @@
 # -*- coding: utf-8 -*-
-import unittest, json, os
-from unittest.mock import patch
+import unittest, os
 import tweepy
 from dotenv import load_dotenv
-import random, string
 
 class ApiTwitterPostTweet((unittest.TestCase)):
     
