@@ -1,5 +1,4 @@
 Flask==2.0.1
-openweathersdk
 tweepy
 python-dotenv
 werkzeug==2.0.3
