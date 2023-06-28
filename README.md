@@ -48,7 +48,7 @@ The API has the following endpoints:
 Example
 
 ```
-POST /api/publish_weather/ HTTP/1.1
+POST /publish_weather/ HTTP/1.1
 Host: localhost:5000
 Content-Type: application/json
 
@@ -66,7 +66,7 @@ return 200
 Example
 
 ```
-POST /api/publish_weather_sdk/ HTTP/1.1
+POST /publish_weather_sdk/ HTTP/1.1
 Host: localhost:5000
 Content-Type: application/json
 
