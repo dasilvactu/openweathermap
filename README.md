@@ -1,7 +1,7 @@
-# opemweathermap API
+# openweathermap API
 
 This project aims to demonstrate the integration of different APIs, such as the Twitter API for managing tweets and the OpenWeather API for retrieving weather data.
-Taking advantage of these APIs, the user can publish a tweet with the current weather of a city and the average temperature forecast for 5 days
+By taking advantage of these APIs, the user can publish a tweet with the current weather of a city and the average temperature forecast for 5 days
 
 Example of a tweet:
 
@@ -78,13 +78,12 @@ return 200
 ``` Weather and forecast publish successfully ```
 
 # Testing
-To run the unit tests, follow the steps below:
-1. Make sure the container are up
+In order to run the unit tests, follow the steps below:
+1. Make sure the container is up
 2. All tests are in `tests` folder. You can run an especific test with the command:
 
 ` docker exec <container_name> python -m unittest tests/test_<name>.py `
 
-To know container name, tou can run:
+In order to get the container name, you can run:
 ` docker ps `
-and get the container name
 
